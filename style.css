@@ -1,0 +1,95 @@
+body {
+  background-color: rgba(66, 212, 197, 1);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+  margin: 0 auto;
+  max-width: 800px;
+  width: 90%;
+}
+
+h1 {
+  font-size: 36px;
+  color: rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 1px rgba(255, 255, 255, 0.33);
+}
+
+.letter {
+  height: 60vh;
+  margin: 0 auto;
+  max-width: 600px;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  width: 90%;
+}
+
+.letter > * {
+  box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.25);
+}
+
+.sent {
+  transform: translateY(-200vh);
+  transition: transform 1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+}
+
+.top-fold {
+  background-color: #f5f5de;
+  border-bottom: 1px solid #f5f5de;
+  height: 20vh;
+  transform: rotateX(-10deg);
+  transform-origin: bottom;
+  transition: transform 1.5s;
+}
+
+.top-folded {
+  transform: rotateX(-180deg) !important;
+}
+
+.center-fold {
+  align-items: center;
+  background-color: #f5f5de;
+  border-bottom: 1px solid #f5f5de;
+  border-top: 1px solid #f5f5de;
+  display: flex;
+  justify-content: center;
+  height: 20vh;
+}
+
+.bottom-fold {
+  background-color: #f5f5de;
+  border-top: 1px solid #f5f5de;
+  height: 20vh;
+  transform: rotateX(10deg);
+  transform-origin: top;
+  transition: transform 1.5s;
+}
+
+.bottom-folded {
+  transform: rotateX(180deg) !important;
+}
+
+textarea {
+  background: transparent;
+  border: none;
+  color: rgba(0, 0, 0, 0.75);
+  font-size: 20px;
+  height: 80%;
+  margin: 0;
+  padding: 10px;
+  resize: none;
+  text-shadow: 1px 1px white;
+  width: 90%;
+}
+
+button {
+  background-color: #359d92;
+  border: 1px solid #f5f5de;
+  border-radius: 5px;
+  color: #f5f5de;
+  font-size: 20px;
+  margin: 0 auto;
+  padding: 5px 10px;
+}
