@@ -27,7 +27,7 @@ async function handleClick(event) {
     if (!folded) {
       window.setTimeout(() => {
         textarea.disabled = false;
-        textarea.placeholder = 'Click here and write down a thought you want to let go of.';
+        textarea.placeholder = 'Click here and write down a thought you want to let go of. What you write is deleted, without being sent to any servers.';
         textarea.focus();
       }, 250);
     }

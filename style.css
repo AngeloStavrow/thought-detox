@@ -37,7 +37,11 @@ h1 {
 
 .top-fold {
   background-color: #f5f5de;
-  border-bottom: 1px solid #f5f5de;
+  border-image: 10 repeating-linear-gradient(-45deg, red 0, red 1em, transparent 0, transparent 2em,
+                  #58a 0, #58a 3em, transparent 0, transparent 4em);
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid transparent;
   height: 20vh;
   transform: rotateX(-10deg);
   transform-origin: bottom;
@@ -51,8 +55,10 @@ h1 {
 .center-fold {
   align-items: center;
   background-color: #f5f5de;
-  border-bottom: 1px solid #f5f5de;
-  border-top: 1px solid #f5f5de;
+  border-image: 10 repeating-linear-gradient(-45deg, red 0, red 1em, transparent 0, transparent 2em,
+                  #58a 0, #58a 3em, transparent 0, transparent 4em);
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
   display: flex;
   justify-content: center;
   height: 20vh;
@@ -60,7 +66,11 @@ h1 {
 
 .bottom-fold {
   background-color: #f5f5de;
-  border-top: 1px solid #f5f5de;
+  border-bottom: 10px solid transparent;
+  border-image: 10 repeating-linear-gradient(-45deg, red 0, red 1em, transparent 0, transparent 2em,
+                  #58a 0, #58a 3em, transparent 0, transparent 4em);
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
   height: 20vh;
   transform: rotateX(10deg);
   transform-origin: top;
@@ -82,6 +92,10 @@ textarea {
   resize: none;
   text-shadow: 1px 1px white;
   width: 90%;
+}
+
+textarea:focus {
+  outline: none;
 }
 
 button {
