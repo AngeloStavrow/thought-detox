@@ -20,7 +20,7 @@ h1 {
 .letter {
   height: 60vh;
   margin: 0 auto;
-  max-width: 600px;
+  max-width: 500px;
   perspective: 1000px;
   transform-style: preserve-3d;
   width: 90%;
@@ -37,15 +37,16 @@ h1 {
 
 .top-fold {
   background-color: #f5f5de;
-  border-image: 10 repeating-linear-gradient(-45deg, red 0, red 1em, transparent 0, transparent 2em,
-                  #58a 0, #58a 3em, transparent 0, transparent 4em);
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-top: 10px solid transparent;
+  border-color: #f5f5de;
+  border-image: 10 repeating-linear-gradient(-45deg, red 0, red 1em, #f5f5de 0, #f5f5de 2em,
+                  #58a 0, #58a 3em, #f5f5de 0, #f5f5de 4em);
+  border-style: solid;
+  border-width: 8px 8px 0 8px;
   height: 20vh;
   transform: rotateX(-10deg);
   transform-origin: bottom;
   transition: transform 1.5s;
+  z-index: 3;
 }
 
 .top-folded {
@@ -55,26 +56,29 @@ h1 {
 .center-fold {
   align-items: center;
   background-color: #f5f5de;
-  border-image: 10 repeating-linear-gradient(-45deg, red 0, red 1em, transparent 0, transparent 2em,
-                  #58a 0, #58a 3em, transparent 0, transparent 4em);
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
+  border-color: #f5f5de;
+  border-image: 10 repeating-linear-gradient(-45deg, red 0, red 1em, #f5f5de 0, #f5f5de 2em,
+                  #58a 0, #58a 3em, #f5f5de 0, #f5f5de 4em);
+  border-style: solid;
+  border-width: 0 8px 0 8px;
   display: flex;
   justify-content: center;
   height: 20vh;
+  z-index: 1;
 }
 
 .bottom-fold {
   background-color: #f5f5de;
-  border-bottom: 10px solid transparent;
-  border-image: 10 repeating-linear-gradient(-45deg, red 0, red 1em, transparent 0, transparent 2em,
-                  #58a 0, #58a 3em, transparent 0, transparent 4em);
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
+  border-color: #f5f5de;
+  border-image: 10 repeating-linear-gradient(-45deg, red 0, red 1em, #f5f5de 0, #f5f5de 2em,
+                  #58a 0, #58a 3em, #f5f5de 0, #f5f5de 4em);
+  border-style: solid;
+  border-width: 0 8px 8px 8px;
   height: 20vh;
   transform: rotateX(10deg);
   transform-origin: top;
   transition: transform 1.5s;
+  z-index: 2;
 }
 
 .bottom-folded {
