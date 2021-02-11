@@ -7,6 +7,8 @@ Click `Show` in the header to see your app live. Updates to your code will insta
 
 Find out more [about Glitch](https://glitch.com/about).
 
+This app was heavily inspired by Josh Comeau's [Folding the DOM article](https://www.joshwcomeau.com/posts/folding-the-dom/).
+
 
 Your Project
 ------------
