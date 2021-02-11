@@ -30,9 +30,36 @@ h1 {
   box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.25);
 }
 
+.about {
+  color: rgba(0, 0, 0, 0.75);
+  display: block;
+  margin: 0 auto;
+  max-width: 800px;
+  width: 90%;  
+}
+
+.about h2 {
+  color: rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 1px rgba(255, 255, 255, 0.33);
+}
+
+.about a {
+  color: rgba(0, 0, 0, 0.5);
+}
+
 .sent {
   transform: translateY(-200vh);
   transition: transform 1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+}
+
+footer {
+  color: rgba(0, 0, 0, 0.75);
+  font-size: small;
+  text-align: center;
+}
+
+footer a {
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .top-fold {
